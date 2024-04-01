@@ -1,0 +1,290 @@
+// Desktop
+.wrap-footer {
+    background-color: #003da5;
+    width: 1440px;
+    max-width: 100%;
+    height: 466px;
+    clip-path: ellipse(118vw 100% at 50% 100%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.body-footer {
+    position: absolute;
+    top: 50px;
+    height: 416px;
+    width: 1280px;
+    max-width: 100%;
+    margin: 0 50px;
+}
+
+.body-footer-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.btn-back {
+    width: 210px;
+    height: 40px;
+    color: #fff;
+    background-color: #003da5;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    border: 1px solid #fff;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: #003da5;
+    }
+}
+
+.body-footer-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body-footer-nav-group li,
+.body-footer-nav-group a {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.body-footer-nav-group label {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+// Cột một
+.body-footer-nav-contactus {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.body-footer-nav-contactus-icon {
+    margin-right: 8px;
+}
+
+.body-footer-nav-career {
+    display: flex;
+    align-items: center;
+}
+
+.body-footer-nav-contactus:hover,
+.body-footer-nav-career:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    cursor: default;
+}
+
+.body-footer-nav-career-icon {
+    margin-right: 8px;
+}
+
+.body-footer-nav-career-text {
+    margin-right: 8px;
+}
+
+// Hai
+
+.body-footer-nav-investor,
+.body-footer-nav-partner,
+.body-footer-nav-supplier {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        cursor: default;
+    }
+}
+
+.body-footer-nav-investor-text,
+.body-footer-nav-partner-text,
+.body-footer-nav-supplier-text {
+    margin-right: 8px;
+}
+
+// Ba
+
+.body-footer-nav-leader,
+.body-footer-nav-structure,
+.body-footer-nav-policy,
+.body-footer-nav-storage,
+.body-footer-nav-awards,
+.body-footer-nav-news {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        cursor: default;
+    }
+}
+
+.body-footer-nav-awards-text,
+.body-footer-nav-news-text {
+    margin-right: 8px;
+}
+
+// Bốn
+
+.body-footer-nav-sitemap {
+    margin-top: 16px;
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        cursor: default;
+    }
+}
+
+// Năm
+
+.body-footer-nav-privacy,
+.body-footer-nav-conditions,
+.body-footer-nav-adchoices {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        cursor: default;
+    }
+}
+
+.body-footer-nav-privacy-text,
+.body-footer-nav-conditions-text,
+.body-footer-nav-adchoices-text {
+    margin-right: 8px;
+}
+
+.body-footer-nav-adchoices-img {
+    width: 14px;
+    height: 18px;
+}
+
+// Body footer Bottom
+.body-footer-bottom {
+    width: 1280px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.body-footer-bottom-left-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 135px;
+    height: 35px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    color: #003da5;
+    background-color: #fff;
+
+    &:hover {
+        background-color: #003da5;
+        cursor: pointer;
+        color: #fff;
+        border: solid 1px #fff;
+    }
+}
+
+.body-footer-bottom-left-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.body-footer-bottom-left-text {
+    font-size: 14px;
+    font-size: 400;
+}
+
+.body-footer-bottom-center {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.body-footer-bottom-right {
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+}
+
+.body-footer-bottom-right-facebook,
+.body-footer-bottom-right-twitter,
+.body-footer-bottom-right-youtube,
+.body-footer-bottom-right-instagram,
+.body-footer-bottom-right-linkedin {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
+
+// Tablet, Mobile
+
+@media only screen and (max-width: 899px) {
+    .wrap-footer {
+        height: 990px;
+    }
+
+    .body-footer-nav {
+        flex-direction: column;
+    }
+
+    .body-footer-nav-group {
+        margin-bottom: 20px;
+    }
+
+    .body-footer-nav-group li,
+    .body-footer-nav-group label {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .body-footer-bottom {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .body-footer-bottom-left {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .body-footer-bottom-center {
+        order: 3;
+        margin-top: 20px;
+    }
+    .body-footer-bottom-right {
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .body-footer-bottom-right-facebook,
+    .body-footer-bottom-right-twitter,
+    .body-footer-bottom-right-youtube,
+    .body-footer-bottom-right-instagram,
+    .body-footer-bottom-right-linkedin {
+        margin-right: 40px;
+    }
+}

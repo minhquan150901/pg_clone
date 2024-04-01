@@ -1,0 +1,207 @@
+// Desktop
+// Show footer navigation
+.wrap-navigatefooter {
+    position: relative;
+    z-index: 11000;
+}
+
+.navigatefooter-container {
+    width: 1440px;
+    max-width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    position: fixed;
+    bottom: 0;
+}
+
+.navigatefooter-container-left {
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 16px;
+    display: flex;
+}
+
+.wrap-partner-investor,
+.wrap-company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partner-investor {
+    cursor: default;
+}
+
+// xử lý khi hovering
+.partner-investor-list {
+    position: absolute;
+    z-index: 100;
+    padding-left: 0;
+    top: calc(100% - 212px);
+    left: 20px;
+    width: 230px;
+    height: 150px;
+    background-color: #003da5;
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.partner-investor-list-hidden,
+.partner-investor-list-hidden a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px 0;
+    margin-left: 5px;
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+}
+
+.partner-investor-list-hidden::before {
+    content: '';
+    border-width: 10px 80px;
+    border-style: solid;
+    border-color: transparent transparent transparent transparent;
+    position: absolute;
+    left: 0;
+    top: 145px;
+}
+
+.wrap-partner-investor:hover .partner-investor-list {
+    display: block;
+    opacity: 1;
+}
+
+.partner-investor-icon,
+.company-icon {
+    margin: auto 4px;
+}
+
+// Tiếp theo
+.company-list {
+    position: absolute;
+    z-index: 100;
+    padding-left: 0;
+    top: calc(100% - 350px);
+    left: 200px;
+    width: 250px;
+    height: 300px;
+    background-color: #003da5;
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.company-list-hidden,
+.company-list-hidden a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px 0;
+    margin-left: 5px;
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+}
+
+.company-list-hidden::before {
+    content: '';
+    border-width: 10px 125px;
+    border-style: solid;
+    border-color: transparent transparent transparent transparent;
+    position: absolute;
+    right: 0;
+    top: 300px;
+}
+
+.wrap-company:hover .company-list {
+    display: block;
+    opacity: 1;
+}
+
+.icon-down {
+    font-size: 20px;
+    margin-left: 8px;
+    align-items: center;
+}
+
+.company {
+    margin-left: 16px;
+}
+
+.navigatefooter-container-center {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.navigatefooter-container-right {
+    align-items: center;
+    color: #fff;
+    margin-right: 16px;
+    display: flex;
+}
+
+.contact-us,
+.career {
+    font-size: 12px;
+    font-weight: 500;
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        cursor: default;
+    }
+}
+
+.icon-up {
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+}
+
+.career {
+    margin-left: 16px;
+}
+
+.btn-accept-cookie {
+    width: 140px;
+    height: 40px;
+    min-width: 80px;
+    margin-left: 16px;
+    color: #ffffff;
+    background-color: #003da5;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.navigatefooter-container-hidden {
+    display: none;
+}
+
+// Tablet, Mobile
+@media only screen and (max-width: 899px) {
+    .navigatefooter-container {
+        display: none;
+    }
+}

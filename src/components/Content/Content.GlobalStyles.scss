@@ -1,0 +1,747 @@
+// Desktop
+.wrap-content {
+    margin-top: 66px;
+    width: 1440px;
+}
+
+// Giới Thiệu
+.content-introduce {
+    position: relative;
+    background-color: #003da5;
+    width: 1440px;
+    height: 630px;
+    overflow: hidden;
+}
+
+.content-introduce::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.content-introduce::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    clip-path: ellipse(50% 4% at 50% 100%);
+    z-index: 2;
+}
+
+.content-introduce img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.content-introduce img.active {
+    opacity: 1;
+}
+
+.content-introduce-image1,
+.content-introduce-image2,
+.content-introduce-image3,
+.content-introduce-image4 {
+    width: 1440px;
+    max-width: 100%;
+}
+
+// Button pause/play
+.content-introduce-btn {
+    position: absolute;
+    background-color: #003da5;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10001;
+    right: 2%;
+    top: 4%;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.content-introduce-btn-play,
+.content-introduce-btn-pause {
+    width: 16px;
+    height: 16px;
+}
+
+// Nội Dung Phần Giới Thiệu
+.content-introduce-title,
+.content-introduce-report-btn {
+    position: absolute;
+    z-index: 6;
+}
+
+.content-introduce-title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1215px;
+    height: 192px;
+    color: #fff;
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.content-introduce-title::after {
+    content: '.';
+    color: #fedb00;
+}
+
+.content-introduce-report-btn {
+    position: relative;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 294px;
+    height: 46px;
+    background-color: #003da5;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+// Xử lí hover
+.content-introduce-report-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background: #fff;
+    transition: width 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    z-index: 2;
+}
+
+.content-introduce-report-btn:hover::before {
+    width: 50%;
+}
+
+.content-introduce-report-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    background-color: #fff;
+    transition: width 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    z-index: 2;
+}
+
+.content-introduce-report-btn:hover::after {
+    width: 51%;
+}
+
+.content-introduce-report-btn-text,
+.content-introduce-report-btn-icon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    z-index: 3;
+}
+
+.content-introduce-report-btn:hover .content-introduce-report-btn-text,
+.content-introduce-report-btn:hover .content-introduce-report-btn-icon {
+    color: #003da5;
+}
+
+.content-introduce-report-btn-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+
+// Cam Kết & Nỗ Lực
+.content-commitment-effort {
+    width: 1440px;
+    height: 705px;
+    padding-top: 88px;
+}
+
+.content-commitment-effort-title {
+    width: 1300px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-commitment-effort-ourbrand-text {
+    font-size: 16px;
+    font-weight: 800;
+    color: #003da5;
+}
+
+.content-commitment-effort-products-text {
+    font-size: 48px;
+    font-weight: 700;
+    color: #003da5;
+}
+
+.content-commitment-effort-products-text::after {
+    content: '.';
+    color: #fedb00;
+}
+
+.content-commitment-effort-list-products {
+    width: 1440px;
+    height: 304px;
+    margin: 32px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content-commitment-effort-brand {
+    width: 200x;
+    height: 200px;
+    padding: 0 8px;
+    position: relative;
+}
+
+.content-commitment-effort-brand img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.content-commitment-effort-brand::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #02266d;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s linear, transform 0.3s ease;
+    z-index: 2;
+    transform-origin: center;
+}
+
+.content-commitment-effort-brand:hover::before {
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.content-commitment-effort-brand:hover img {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.hover-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.hover-content .hover-content-text {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hover-content .hover-content-btn {
+    background-color: #fff;
+    color: #003da5;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hover-content .hover-content-btn a {
+    text-decoration: none;
+    color: #003da5;
+}
+
+.content-commitment-effort-brand:hover .hover-content {
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 3;
+}
+
+// Xử lí khi hover
+
+.content-commitment-effort-showmore-products {
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.content-commitment-effort-showmore-products-btn {
+    width: 514px;
+    height: 100%;
+    border-radius: 50px;
+    border: solid 1px #003da5;
+    background-color: #fff;
+    color: #003da5;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:hover {
+        cursor: pointer;
+        background-color: #003da5;
+        color: #fff;
+    }
+}
+
+.content-commitment-effort-showmore-products-prev-next {
+    position: absolute;
+    right: 5%;
+    color: #003da5;
+}
+
+.content-commitment-effort-showmore-products-prev,
+.content-commitment-effort-showmore-products-next {
+    width: 42px;
+    height: 28px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.content-commitment-effort-showmore-products-prev:hover {
+    cursor: pointer;
+    transform: scale(1.3) translateX(-10%);
+}
+
+.content-commitment-effort-showmore-products-next:hover {
+    cursor: pointer;
+    transform: scale(1.3) translateX(10%);
+}
+// Nỗ Lực Phát Triển Bền Vững
+.content-sustainable-development {
+    width: 1440px;
+    height: 620px;
+    display: flex;
+    overflow: visible;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-sustainable-development-left {
+    width: 700px;
+    height: 460px;
+    border-radius: 300px;
+}
+.content-sustainable-development-right {
+    width: 700px;
+    height: 460px;
+    background-color: #003da5;
+    border-radius: 300px;
+    display: flex;
+    position: relative;
+}
+
+.content-sustainable-development-left-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 300px;
+    object-fit: cover;
+}
+
+.content-sustainable-development-right-body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.content-sustainable-development-right-body-text {
+    width: 80%;
+    margin: 100px auto 0;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.content-sustainable-development-right-body-btn {
+    position: absolute;
+    left: 30%;
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    width: 180px;
+    height: 46px;
+    background-color: #003da5;
+    border: solid 1px #fff;
+    border-radius: 50px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: #003da5;
+    }
+}
+
+.content-sustainable-development-right-img {
+    height: 100%;
+    right: 0;
+}
+
+// Các Trang Web Của P&G
+.content-websites-orther {
+    width: 1440px;
+    height: 863px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content-websites-orther-left,
+.content-websites-orthe-right {
+    cursor: pointer;
+    width: 600px;
+    height: 681px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    transition: transform 0.3s;
+    z-index: 1;
+}
+
+.overlay:hover .content-websites-orther-left-img,
+.overlay:hover .content-websites-orther-right-img {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.content-websites-orther-left-img,
+.content-websites-orther-right-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border: 3px solid #fff;
+    box-sizing: border-box;
+}
+
+.overlay-hidden {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 30%;
+    border-top-right-radius: 50px;
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    z-index: 10;
+}
+
+.overlay:hover .overlay-hidden {
+    transform: translateY(0);
+}
+
+.overlay-hidden-img {
+    width: 60px;
+    height: 50px;
+    margin-left: 40px;
+}
+.overlay-hidden-text {
+    color: #003da5;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+.overlay-hidden-btn {
+    font-size: 16px;
+    font-weight: 600;
+    width: 250px;
+    height: 46px;
+    color: #003da5;
+    background-color: #fff;
+    border: solid 1px #003da5;
+    border-radius: 50px;
+    margin-left: 40px;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #003da5;
+        color: #fff;
+    }
+}
+
+// Tablet, Mobile
+@media only screen and (max-width: 899px) {
+    .wrap-content {
+        margin-top: 66px;
+        width: 100%;
+    }
+
+    // Giới Thiệu
+    .content-introduce {
+        position: relative;
+        background-color: #003da5;
+        width: 100%;
+        height: 390px;
+        overflow: hidden;
+    }
+
+    .content-introduce::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 1;
+    }
+    .content-introduce::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        clip-path: ellipse(50% 4% at 50% 100%);
+        z-index: 2;
+        background-size: 100% auto;
+    }
+
+    .content-introduce img {
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        top: -18%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .content-introduce-btn {
+        display: none;
+    }
+
+    .content-introduce-title {
+        height: 96px;
+        font-size: 40px;
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .content-introduce-report-btn {
+        margin-top: 40px;
+        border: 1px solid #fff;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #fff;
+            color: #003da5;
+        }
+    }
+
+    // Cam Kết & Nỗ Lực
+    .content-commitment-effort {
+        width: 100%;
+        height: 630px;
+        padding: 10px;
+    }
+    .content-commitment-effort-title {
+        width: 100%;
+    }
+
+    .content-commitment-effort-products-text {
+        display: none;
+    }
+
+    .content-commitment-effort-list-products {
+        margin: 0;
+    }
+
+    .content-commitment-effort-showmore-products {
+        display: flex;
+        flex-direction: column;
+        height: 120px;
+        position: relative;
+    }
+
+    .content-commitment-effort-showmore-products-btn {
+        position: absolute;
+        height: 46px;
+        top: 0;
+    }
+
+    .content-commitment-effort-showmore-products-prev-next {
+        position: absolute;
+        height: 46px;
+        display: flex;
+        justify-content: space-around;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    // Nỗ Lực Phát Triển Bền Vững
+    .content-sustainable-development {
+        position: relative;
+        width: 100%;
+        height: 416px;
+        margin-bottom: 50px;
+    }
+
+    .content-sustainable-development-left {
+        width: 100%;
+        height: 416px;
+    }
+
+    .content-sustainable-development-left-img {
+        border-radius: 0;
+        z-index: 1;
+    }
+
+    .content-sustainable-development-right {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 320px;
+        height: 320px;
+        border-radius: 300px;
+        background-color: rgba(0, 61, 165, 0.8);
+        color: #fff;
+        z-index: 2;
+    }
+
+    .content-sustainable-development-right-body {
+        position: relative;
+    }
+
+    .content-sustainable-development-right-body-text {
+        font-size: 28px;
+        position: absolute;
+        margin: 70px 42px;
+        left: 0;
+        top: 0;
+    }
+
+    .content-sustainable-development-right-body-text::after {
+        content: ' .';
+        color: #fedb00;
+    }
+
+    .content-sustainable-development-right-body-btn {
+        background-color: transparent;
+        position: absolute;
+        margin: 70px;
+        left: 0;
+        bottom: 0;
+    }
+
+    .content-sustainable-development-right-img {
+        display: none;
+    }
+
+    // Các Trang Web Của P&G
+    .content-websites-orther {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content-websites-orther-left,
+    .content-websites-orthe-right {
+        width: 100%;
+        margin: 40px auto;
+    }
+
+    .overlay {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+    }
+
+    .overlay-hidden {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 1);
+        text-align: center;
+        transform: translateY(0);
+    }
+}
