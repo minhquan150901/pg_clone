@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/pg_clone/static/css/main.ce171969.css",
+    "main.js": "/pg_clone/static/js/main.fc879df8.js",
+    "static/js/453.4fff50e6.chunk.js": "/pg_clone/static/js/453.4fff50e6.chunk.js",
+    "static/media/HP_1.png": "/pg_clone/static/media/HP_1.c50fe387c1d688b54464.png",
+    "static/media/HP_3.png": "/pg_clone/static/media/HP_3.283dbfe6eae53ec7c0e8.png",
+    "static/media/Mom_and_baby.png": "/pg_clone/static/media/Mom_and_baby.826333ac804dabb198a2.png",
+    "static/media/HP_2_mb.png": "/pg_clone/static/media/HP_2_mb.52c8d995176796b26250.png",
+    "static/media/HP-Investor_Relations.png": "/pg_clone/static/media/HP-Investor_Relations.752c89d131ba4c7acb44.png",
+    "static/media/HP-Careers.png": "/pg_clone/static/media/HP-Careers.5bb8900f8f1a9bf6daca.png",
+    "static/media/P_G_Logo.png": "/pg_clone/static/media/P_G_Logo.1ed0e51a8cff456e62a8.png",
+    "static/media/HP_4_mb.png": "/pg_clone/static/media/HP_4_mb.aa69e8ff63484b012ef6.png",
+    "static/media/A_girl_showhand.png": "/pg_clone/static/media/A_girl_showhand.71ca27eaea8bfc7ca588.png",
+    "static/media/adchoices.jpg": "/pg_clone/static/media/adchoices.397785c064ec078c08b9.jpg",
+    "static/media/Tide.png": "/pg_clone/static/media/Tide.f4e35ca278f31c495bd4.png",
+    "static/media/Safeguard.png": "/pg_clone/static/media/Safeguard.b4be0a5575490ab0a1b6.png",
+    "static/media/Ariel.png": "/pg_clone/static/media/Ariel.83e9464885b6dbb8a81d.png",
+    "static/media/ambipur.png": "/pg_clone/static/media/ambipur.f420ab3ab31b36698e3b.png",
+    "static/media/Rejoice.png": "/pg_clone/static/media/Rejoice.0f1b66b1c98d73734f4b.png",
+    "static/media/DownyBlue.png": "/pg_clone/static/media/DownyBlue.7eb07bd2338cd59f2dac.png",
+    "static/media/Pampers.png": "/pg_clone/static/media/Pampers.7a270bf07548e9a67595.png",
+    "static/media/Olay.png": "/pg_clone/static/media/Olay.1ee99155e7c0d20b4bb5.png",
+    "static/media/download.png": "/pg_clone/static/media/download.6700e4a9f0ef45fbb06a.png",
+    "static/media/Gillette.png": "/pg_clone/static/media/Gillette.e1690d7ca5939e2f308a.png",
+    "static/media/ORAL_B__RGB.png": "/pg_clone/static/media/ORAL_B__RGB.e7d4abb51595d3be9674.png",
+    "index.html": "/pg_clone/index.html",
+    "main.ce171969.css.map": "/pg_clone/static/css/main.ce171969.css.map",
+    "main.fc879df8.js.map": "/pg_clone/static/js/main.fc879df8.js.map",
+    "453.4fff50e6.chunk.js.map": "/pg_clone/static/js/453.4fff50e6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce171969.css",
+    "static/js/main.fc879df8.js"
+  ]
+}
